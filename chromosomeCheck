@@ -1,0 +1,12 @@
+function chromosomeCheck(sperm) {
+  var gender = 0;
+  for (var i = 0; i < sperm.length; i ++) {
+     if (sperm[i] === 'Y') {
+    gender = "son"
+  } else if (sperm[i] === "X") {
+    gender = "daughter"
+  }
+  }
+  return "Congratulations! You're going to have a " + gender + ".";
+ 
+}
