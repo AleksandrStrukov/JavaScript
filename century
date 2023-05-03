@@ -1,0 +1,14 @@
+unction century(year) {
+  // Finish this :)
+  var Centure = 0;
+  
+  for (var i = 0; i<year;i++) {
+    var k = year%100;
+    if (k > 0) {
+      Centure = (Math.floor(year/100)+1);
+    } else {
+      Centure = Math.floor(year/100);
+    }
+  }
+  return Centure;
+}
