@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>house</title>
+	
+</head>
+<body>
+<canvas id="canvas" width="300" height="300"></canvas>
+<script>
+var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	var circle = function (x,y,radius) {
+	
+	ctx.beginPath();
+	ctx.arc(x,y,radius,0, Math.PI * 2, false);
+	ctx.stroke();
+	};
+	
+	var circlefill = function (x,y,radius) {
+	
+	ctx.beginPath();
+	ctx.arc(x,y,radius,0, Math.PI * 2, false);
+	ctx.fill();
+	};
+	
+	ctx.lineWidth = 9;
+	ctx.strokeStyle = "Black";
+	circle(150,60,50);
+	circle(150,200,90);
+	ctx.strokeStyle = "Orange";
+	circle(150,60,5);
+	ctx.fillStyle ="Brown";
+	circlefill(140,45,5);
+	circlefill(160,45,5);
+	circlefill(160,45,5);
+	ctx.fillStyle ="Green";
+	circlefill(150,200,5);
+	circlefill(150,180,5);
+	circlefill(150,220,5);
+	ctx.fillStyle ="Yellow";
+	circlefill(150,160,5);
+	circlefill(150,140,5);
+	circlefill(150,120,5);
+	ctx.fillStyle ="Red";
+	circlefill(150,240,5);
+	circlefill(150,260,5);
+	circlefill(150,280,5);
+</script>
+</body>
+</html>
