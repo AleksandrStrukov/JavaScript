@@ -1,0 +1,11 @@
+function saleHotdogs(n){
+  if (n<5) {
+    var f = n*100;
+  } else if (n >= 5 && n < 10){
+    f = n*95;
+  } else if( n>=10) {
+    f=n*90;
+  } else {consol.log ("insert true number")
+         }
+  return f;
+}
