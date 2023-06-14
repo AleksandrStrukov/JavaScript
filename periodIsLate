@@ -1,0 +1,11 @@
+function periodIsLate(last, today, cycleLength) {
+ 
+ 
+ const oneDay = 1000 * 60 * 60 * 24; 
+  
+  if (((today.getTime()-last.getTime())/oneDay) <= cycleLength) {
+    return false;
+  } else {
+  return true;
+}
+  }
