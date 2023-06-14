@@ -1,0 +1,17 @@
+function sum (numbers) {
+   var numbersy =0;
+  for (var i=0;i<numbers.length;i++) {
+    if (numbers.length === 0) {
+      numbersy = 0;
+    } else {
+   
+    numbersy += numbers[i];
+    
+      };
+    
+  }  
+  return numbersy;
+  "use strict";
+    
+    
+};
