@@ -1,0 +1,12 @@
+function squareDigits(num){
+  let su = num.toString();
+  var res=[];
+  var resul="";
+  for (var i=0;i<su.length;i++) {
+    res.push(Math.pow(Number(...su[i]), 2));
+  }
+  for (var j=0;j<res.length;j++) {
+    resul += res[j].toString(); 
+  }
+  return Number(resul);
+}
