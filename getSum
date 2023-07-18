@@ -1,0 +1,21 @@
+function getSum(a, b)
+{
+  let res = [];
+  let rrr=0;
+       if (a<b) { 
+         for (let i=a; i<= b;i++) {
+       res.push(i);
+   };
+  }
+     if (b<a) { 
+         for (let j=b; j<=a;j++) {
+       res.push(j);
+  } };
+  for (let u = 0;u< res.length;u++) {
+    rrr += res[u];
+  }
+  if (a===b) {
+    rrr=a;
+  }
+  return rrr;
+}
