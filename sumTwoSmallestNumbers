@@ -1,0 +1,8 @@
+function sumTwoSmallestNumbers(numbers) {  
+ function compareNumbers(a, b) {
+  return a - b;
+}
+  let r = numbers.sort(compareNumbers);
+  let res = r[0]+r[1];
+  return res;
+}
