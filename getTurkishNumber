@@ -1,0 +1,38 @@
+const getTurkishNumber = (num) => {
+ let num9 ={
+   0 : 'sıfır',
+1 : 'bir',
+2 : 'iki',
+3 : 'üç',
+4 : 'dört',
+5 : 'beş',
+6 : 'altı',
+7 : 'yedi',
+8 : 'sekiz',
+9 : 'dokuz'
+ };
+ let num99 = {
+   10 : 'on',
+20 : 'yirmi',
+30 : 'otuz',
+40 : 'kırk',
+50 : 'elli',
+60 : 'altmış',
+70 : 'yetmiş',
+80 : 'seksen',
+90 : 'doksan'
+ };
+  let res='';
+  if (num >= 0 || num <=9) {
+    res = num9[num];
+  } 
+  if (num >=10 && num % 10 === 0) {
+    res = num99[num];
+  }
+  if (num>10&& num % 10 !== 0) {
+  let g = Math.trunc(num/10);
+  let y = num % 10;
+    res=num99[g*10]+' ' +num9[y];
+  }
+  return res;
+ }
