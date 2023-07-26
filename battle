@@ -1,0 +1,21 @@
+function battle(x, y) {
+  
+let arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
+              'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+let sumX=0;
+  let sumY=0;
+  let arrX = x.split('');
+  let arrY = y.split('');
+  for (let i=0;i<arrX.length; i++) {
+    sumX+=(arr.indexOf(arrX[i]))+1;
+  }
+   for (let j=0;j<arrY.length; j++) {
+    sumY+=(arr.indexOf(arrY[j]))+1;
+  }
+  if (sumX>sumY) {
+    return x;
+  } else if (sumY>sumX) {
+    return y;
+  } else { return 'Tie!';
+         }
+}
