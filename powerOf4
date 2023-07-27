@@ -1,0 +1,11 @@
+function powerOf4(n) {
+ let res =[];
+  if (n===1) {
+   return true;
+ } else if (n>1) {
+   for (let i=1;i<=n;i*=4) {
+     res.push(i);
+   }
+ }
+return res.includes(n); 
+ }
