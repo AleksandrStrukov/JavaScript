@@ -1,0 +1,8 @@
+function maxMultiple(divisor, bound){
+  let arr = [];
+  for (let i=divisor;i<=bound;i+=divisor) {
+    arr.push(i);
+  }
+  let result = JSON.parse(arr.slice(-1));
+  return result;
+}
