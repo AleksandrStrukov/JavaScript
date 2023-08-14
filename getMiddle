@@ -1,0 +1,18 @@
+function getMiddle(s)
+{
+  let res=[];
+  for (let i=0;i<s.length;i++) {
+     if (s.length%2 === 0) {
+       res.push(s[s.length/2-1]);
+       res.push(s[(s.length/2)]);
+       
+       return res.join('');
+     } else {
+       res.push(s[Math.trunc(s.length/2)]);
+        return res.join('')
+     }
+  }
+ 
+    
+  
+}
