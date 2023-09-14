@@ -1,0 +1,19 @@
+class Thermostat {
+  constructor(temperature) {
+    this._temperature = (5 / 9) * (temperature - 32);
+  }
+
+  get temperature() {
+    return this._temperature;
+  }
+
+  set temperature(newTemperature) {
+    if (newTemperature >= -273.15) {
+      // Check if the new temperature is valid (absolute zero in Celsius)
+      this._temperature = newTemperature;
+    } else {
+      // Assume Fahrenheit and convert to Celsius
+      this._temperature = (5 / 9) * (newTemperature - 32);
+    }
+  }
+}
