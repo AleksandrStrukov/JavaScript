@@ -1,0 +1,19 @@
+function rowSumOddNumbers(n) {
+    let res= [] ;
+    let oddArr=[];
+    let sum=0
+    for (let i = n*(n-1); i<=((n*(n-1))+n*2);i++) {
+        oddArr.push(i);
+        
+    }
+    for (let i=0;i<oddArr.length;i++){
+        if (oddArr[i]%2!==0) {
+            res.push(oddArr[i])
+        }
+    }
+    console.log(res)
+    for (let i=0;i<res.length;i++){
+        sum += res[i];
+    }
+    return sum
+}
