@@ -1,0 +1,8 @@
+
+function tArea(tStr) {
+  let middleRes = tStr.split('\n')
+  let second = middleRes[middleRes.length-2].split(' ')
+  
+  let squ = (((middleRes.length)-3)*(second.length-1))/2
+  return squ
+}
