@@ -1,0 +1,12 @@
+var number = function(busStops){
+  let first = 0;
+  let secont = 0;
+  let arr = [];
+  let sum = 0;
+  for (let i=0;i<busStops.length; i++) {
+    first += busStops[i][0];
+    secont += busStops[i][1];
+    
+  }
+ return (first - secont)
+}
